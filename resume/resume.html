@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Usman Khalid</title>
+<style>
+  @page { size: A4; margin: 11mm 14mm 10mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "DejaVu Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.9pt;
+    line-height: 1.38;
+    color: #1b1b1b;
+  }
+  a { color: inherit; text-decoration: none; }
+  header { text-align: center; margin-bottom: 7pt; }
+  h1 { margin: 0; font-size: 17pt; letter-spacing: .02em; }
+  .title { margin: 2pt 0 2pt; font-size: 9.6pt; color: #444; }
+  .contact { font-size: 8pt; color: #444; }
+  h2 {
+    margin: 8pt 0 3.5pt;
+    break-after: avoid;
+    padding-bottom: 2pt;
+    border-bottom: .8pt solid #9a9a9a;
+    font-size: 8.4pt;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  p { margin: 0; }
+  .item { margin-bottom: 5pt; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .role { font-weight: bold; font-size: 9.3pt; }
+  .date { font-size: 8pt; color: #555; white-space: nowrap; }
+  .sub { color: #444; }
+  ul { margin: 1.5pt 0 0; padding-left: 12pt; }
+  li { margin: 0 0 1pt; }
+  li::marker { font-size: 7pt; }
+  .skills p { margin-bottom: 1.6pt; }
+  .skills b { font-weight: bold; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Usman Khalid</h1>
+  <p class="title">Senior Software Engineer | Technical Lead | Distributed Systems &amp; Applied AI</p>
+  <p class="contact">Lahore, Pakistan | +92 310 0040369 | musmangeee@gmail.com | <a href="https://usman-khalid.netlify.app">usman-khalid.netlify.app</a></p>
+  <p class="contact"><a href="https://www.linkedin.com/in/usman-khalid-1a577184/">linkedin.com/in/usman-khalid-1a577184</a> | <a href="https://github.com/codebyuxman">github.com/codebyuxman</a></p>
+</header>
+
+<h2>Summary</h2>
+<p>Senior Software Engineer and Technical Lead with 9+ years designing scalable, fault-tolerant distributed systems in Node.js, Laravel and Python, and leading cross-functional teams. Spearheaded a multi-hundred-gigabyte database migration that deprecated MongoDB entirely and cut thousands of dollars a month in cloud costs, overhauled CI/CD and observability to hold a 99% uptime SLA, and built applied-AI tooling that accelerated PR approvals by 35% while halving manual QA time. Ships end to end, from event-driven backends to React and React Native front ends, and leads by mentoring, reviewing and setting technical direction rather than by title.</p>
+
+<h2>Work Experience</h2>
+<div class="item">
+  <div class="row"><span class="role">Senior Full-Stack Engineer / Technical Lead</span><span class="date">Feb 2024 - Apr 2026</span></div>
+  <p class="sub">Premion (TEGNA) | California, USA (Remote)</p>
+  <ul>
+    <li>Architected and maintained high-scale Node.js microservices (Express, Fastify) powering an industry-leading CTV/OTT advertising platform running high-volume ad campaigns.</li>
+    <li>Delivered attribution systems end to end across the Forecast, Creative and Attribution modules, exposing Swagger-documented REST APIs consumed across the platform.</li>
+    <li>Designed the real-time analytics storage strategy across MongoDB, PostgreSQL and Snowflake; drove the migration off MongoDB as data grew into hundreds of gigabytes, reducing cost and improving analytical join performance.</li>
+    <li>Held system uptime through significant post-acquisition data growth via SQL query optimization, indexing, and AWS and Docker infrastructure tuning.</li>
+    <li>Led code review and approval for junior developers; set technical direction on schema and module design, and mentored the team on performance patterns such as eliminating N+1 queries.</li>
+    <li>Owned sprint scope and delivery in coordination with the CEO and product manager; tracked work in Jira and versioned in Git.</li>
+    <li>Engineered Prism PR Copilot, an AI-driven CI/CD tool running Claude on AWS Bedrock that validates Jira acceptance criteria against pull requests and posts its review to GitHub, accelerating PR approvals by 35% and saving 50% of manual QA time.</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="role">Senior Full-Stack Engineer</span><span class="date">Apr 2022 - Feb 2024</span></div>
+  <p class="sub">Octillion | California, USA (Remote), acquired by Premion</p>
+  <ul>
+    <li>Designed PostgreSQL and Snowflake schemas carrying high-throughput CTV/OTT advertising data at platform scale.</li>
+    <li>Built Node.js APIs and migrated the services behind them onto Docker containers on AWS, making deployments consistent across every environment.</li>
+    <li>Owned the database layer end to end (schema design, indexing and query optimization) as advertising data volume outgrew the original architecture.</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="role">Engineer</span><span class="date">May 2020 - May 2022</span></div>
+  <p class="sub">Sprout Tech | Remote</p>
+  <ul>
+    <li>Launched Content Gorilla from scratch and scaled it to 20,000+ active users, building and maintaining the full stack on Laravel and Vue.js.</li>
+    <li>Built an automated AI content engine that processed 178M+ words and 500k+ blog posts, integrated with the WordPress and Medium REST APIs.</li>
+    <li>Automated video-to-blog conversion and social scheduling, keeping delivery reliable at scale by wiring third-party publishing APIs and webhooks into the platform.</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="role">Engineer</span><span class="date">Jan 2017 - May 2020</span></div>
+  <p class="sub">Outstart | Lahore, Pakistan</p>
+  <ul>
+    <li>Engineered a multi-tenant property management platform for New York-based owners, automating maintenance requests and apartment service workflows end to end.</li>
+    <li>Delivered LePark, a Laravel parking management system synchronizing in real time with field parking hardware (IoT), with secure REST APIs bridging web dashboards and on-site infrastructure.</li>
+  </ul>
+</div>
+
+<h2>Projects</h2>
+<div class="item">
+  <p class="role">Premion DSP: Real-Time Bidding Platform (Demand-Side)</p>
+  <p class="sub">Node.js, Redis, Snowflake, OpenRTB, CTV/OTT</p>
+  <ul>
+    <li>High-throughput real-time bidding engine processing OpenRTB bid requests for CTV/OTT inventory: audience targeting, dynamic bid valuation and automated campaign budget pacing.</li>
+    <li>Architected low-latency Node.js and Redis microservices holding sub-100ms bid responses under ad-exchange SLA, and owned the big-data telemetry pipeline into Snowflake.</li>
+  </ul>
+</div>
+<div class="item">
+  <p class="role">Premion Fate System: Ad-Tech Reporting &amp; Campaign Management</p>
+  <p class="sub">Vue.js, NestJS, PostgreSQL, Snowflake</p>
+  <ul>
+    <li>Enterprise reporting and campaign management for high-volume OTT/CTV analytics: location, sale and web attribution, creative uploads and inventory forecasting.</li>
+    <li>Owned the system architecture, set the API documentation standards the squads worked to, and directed frontend and backend squads through structured Agile delivery.</li>
+  </ul>
+</div>
+<div class="item">
+  <p class="role">GHL Webhook Sync Service: Event-Driven CRM Integration (Sole Engineer, Client Project)</p>
+  <p class="sub">Python 3.12, Django, Django REST Framework, Celery, Redis, PostgreSQL, Docker, Gunicorn, Nginx, AWS EC2</p>
+  <ul>
+    <li>Receives GoHighLevel opportunity webhooks and stores each event exactly once in PostgreSQL, then syncs it to Trello through Celery tasks with retry and exponential backoff and a tracked status lifecycle.</li>
+    <li>Shipped with keyless IAM OIDC CI/CD, human-approved production releases, a separate staging environment and 55 automated tests.</li>
+  </ul>
+</div>
+<div class="item">
+  <p class="role">SophieFlow: AI Social Media Management SaaS (Founder / Sole Engineer)</p>
+  <p class="sub">Laravel 12, Vue 3 + TypeScript, Inertia.js, Redis, Stripe, Google Gemini / OpenRouter, OpenAI</p>
+  <ul>
+    <li>Multi-tenant SaaS to schedule and publish across 12+ social networks with a unified inbox, analytics, an AI assistant and CRM-style lead capture; queued publishing with retry/backoff, 10+ OAuth integrations, Stripe billing and plan-based access.</li>
+    <li>Built a Gemini 2.5 Pro content engine that writes and publishes SEO articles and prompt templates on schedule, and the first-generation platform (Laravel 9, OpenAI) with team workspaces and WordPress publishing.</li>
+  </ul>
+</div>
+<div class="item">
+  <p class="role">OneParacon: Construction Management Platform, Web &amp; Mobile (Sole Engineer, Client Project)</p>
+  <p class="sub">Laravel 13, React 18 + TypeScript, PWA, MySQL, Anthropic Claude API, Expo / React Native, SQLite</p>
+  <ul>
+    <li>Multi-tenant PWA with QR site sign-on (GPS geofencing, offline queue), site diaries, defects, a Gantt programme and finance, plus a Claude tool-calling assistant with role-scoped tools and immutable audit logs; 480+ API tests.</li>
+    <li>Companion iOS/Android app in Expo with an offline-first SQLite sign-on queue, server-driven capability permissions and QR sign-in from a desktop session.</li>
+  </ul>
+</div>
+<div class="item">
+  <p class="role">Resume Submitter: AI Job-Application Automation, Web &amp; Mobile (Sole Engineer)</p>
+  <p class="sub">Laravel 13, Vue 3, Inertia.js, Anthropic Claude API, Gmail API, Crawlee / Playwright, Chrome Extension (MV3), Expo</p>
+  <ul>
+    <li>Tailors resumes to job posts from a master profile, writes cover letters and emails applications via Gmail with the PDF attached; ATS-readability checks and prompt-injection guards.</li>
+    <li>Adaptive Crawlee/Playwright job crawler, a Manifest V3 auto-fill extension and an Expo mobile app; Docker deploys to Railway and 650+ automated tests.</li>
+  </ul>
+</div>
+
+<h2>Skills</h2>
+<div class="skills">
+  <p><b>Languages:</b> TypeScript, JavaScript (ES6+), PHP, Python, SQL</p>
+  <p><b>Backend:</b> Node.js (Express, Fastify), NestJS, Laravel, Django, Django REST Framework, Celery, Microservices</p>
+  <p><b>Frontend &amp; Mobile:</b> Vue.js (Vue 3), React, Next.js, Inertia.js, Tailwind CSS, PWA, React Native, Expo, TanStack Query, Zustand</p>
+  <p><b>Databases &amp; Data:</b> PostgreSQL, MySQL, MongoDB, Snowflake, Redis, SQLite, Query Optimization, ETL Migration</p>
+  <p><b>AI &amp; LLM:</b> Anthropic Claude API, Claude on AWS Bedrock, Tool Calling, Google Gemini, OpenAI, OpenRouter</p>
+  <p><b>Cloud &amp; DevOps:</b> AWS (EC2, RDS, S3, SSM, IAM OIDC, ELB), Docker, Nginx, Gunicorn, PM2, Railway, GitHub Actions, Bitbucket Pipelines</p>
+  <p><b>Architecture:</b> System Design, OpenRTB / Real-Time Bidding, Event-Driven Webhooks, Idempotency &amp; Retries, Big Data Pipelines, Multi-Tenant SaaS, Cost Optimization, RFC Writing</p>
+  <p><b>Quality &amp; Leadership:</b> TDD, PHPUnit, Jest, Automated QA, Code Review &amp; Approval, Technical Direction, Mentoring, Sprint Planning, Agile/Scrum</p>
+</div>
+
+<h2>Education</h2>
+<div class="item">
+  <div class="row"><span class="role">University of Lahore</span><span class="date">2013 - 2017</span></div>
+  <p class="sub">B.S. Computer Science</p>
+</div>
+</body>
+</html>
