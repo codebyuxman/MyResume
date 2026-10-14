@@ -776,7 +776,7 @@ strong { color: var(--text); font-weight: 600; }
 /* ---------- Skills ---------- */
 .skills {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(14px, 2vw, 20px);
 }
 .skill { padding: 24px; transition: border-color 0.35s; }
@@ -1084,6 +1084,19 @@ strong { color: var(--text); font-weight: 600; }
 .filter.is-active { background: var(--accent); border-color: var(--accent); color: #0a0c0e; font-weight: 600; }
 .project.is-hidden { display: none; }
 
+.projects__more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin-top: clamp(24px, 3vw, 36px);
+  padding: 20px 24px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+}
+.projects__more p { max-width: 560px; color: var(--text-2); font-size: 15px; }
+
 /* ---------- Education ---------- */
 .edu-grid {
   display: grid;
@@ -1151,6 +1164,7 @@ strong { color: var(--text); font-weight: 600; }
   transition: border-color 0.2s;
 }
 .domains__list li:hover { border-color: var(--accent-line); }
+.domains__list li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .domains__list strong { font-size: 15px; }
 .domains__list span { font-size: 13px; color: var(--text-3); line-height: 1.4; }
 
