@@ -6,6 +6,13 @@
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- Hero video: hold still for reduced motion ---------- */
+  var heroVideo = document.querySelector(".hero__video");
+  if (heroVideo && reduceMotion) {
+    heroVideo.removeAttribute("autoplay");
+    heroVideo.pause();
+  }
+
   /* ---------- Footer year ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
